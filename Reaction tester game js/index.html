@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Tester</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #container {
+            text-align: left;
+            margin-left: 20px;
+        }
+        #shape {
+            background-color: #ff5e78;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            display: none;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Added transition for background-color */
+        }
+        #shape:hover {
+            transform: scale(1.1);
+        }
+        h1, p, #stats {
+            color: #3c4059;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        #stats {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Reaction Tester</h1>
+        <p>Click on the circle as soon as you can.</p>
+        <div id="shape"></div>
+        <div id="stats">Stats:</div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
